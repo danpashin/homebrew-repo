@@ -1,11 +1,3 @@
-# Danpashin Repo
+# Homebrew Repository
 
-## How do I install these formulae?
-
-`brew install danpashin/repo/<formula>`
-
-Or `brew tap danpashin/repo` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+A Homebrew repository with software I use. Just type `brew tap danpashin/repo` in your terminal.
