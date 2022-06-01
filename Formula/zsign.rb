@@ -7,10 +7,10 @@ class Zsign < Formula
   head "https://github.com/zhlynn/zsign.git", branch: "master"
 
   depends_on "cmake" => :build
-  depends_on "openssl"
+  depends_on "openssl@1.1"
 
   def install
-    ENV["LDFLAGS"] = "-L#{Formula["openssl"].lib} -lcrypto"
+    ENV["LDFLAGS"] = "-L#{Formula["openssl@1.1"].lib} -lcrypto"
 
     system "cmake", buildpath.to_s, "-B", "build", *std_cmake_args
     system "cmake", "--build", "build", "--target", "zsign"
