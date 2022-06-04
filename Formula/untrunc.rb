@@ -8,7 +8,7 @@ class Untrunc < Formula
 
   option "with-gui", "Compile with GUI support"
   depends_on "ffmpeg@4"
-  depends_on "libui" => :optional
+  depends_on "libui" if build.with? "gui"
 
   def install
     system "make"
