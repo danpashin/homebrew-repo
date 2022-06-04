@@ -9,6 +9,16 @@ class Libui < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
 
+  on_linux do
+    depends_on "gtk+3" => :build
+    depends_on "gdk-pixbuf" => :build
+    depends_on "atk" => :build
+    depends_on "glib" => :build
+    depends_on "pango" => :build
+    depends_on "harfbuzz" => :build
+    depends_on "cairo" => :build
+  end
+
   def install
     system "meson", "setup", "build", *std_meson_args
     system "meson", "compile", "-C", "build"
