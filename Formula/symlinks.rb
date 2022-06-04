@@ -9,5 +9,6 @@ class Symlinks < Formula
   def install
     system ENV.cc.to_s, "-o", "symlinks", "-O3", "symlinks.c"
     bin.install "symlinks"
+    man8.install "symlinks.8"
   end
 end
