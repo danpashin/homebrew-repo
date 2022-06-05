@@ -1,10 +1,10 @@
 class Libui < Formula
   desc "Simple and portable GUI library in C."
-  homepage "https://github.com/andlabs/libui"
-  url "https://github.com/andlabs/libui/archive/fea45b2d5b75839be0af9acc842a147c5cba9295.tar.gz"
+  homepage "https://github.com/libui-ng/libui-ng"
+  url "https://github.com/libui-ng/libui-ng/archive/a850e7ac1e9ca70529f178394d736593c250b5e8.tar.gz"
   version "0.4.1-a"
-  sha256 "9f32ff19e2eb1c5eb1a23120f69f39f1bec14a125396729db091a322c6bee8a6"
-  head "https://github.com/andlabs/libui.git", branch: "master"
+  sha256 "ccf1dd004d35966b219f4e05ae8b1bdeec55d984dbfc2759c0091fc86e213ea8"
+  head "https://github.com/libui-ng/libui-ng.git", branch: "master"
 
   depends_on "meson" => :build
   depends_on "ninja" => :build
