@@ -9,10 +9,11 @@ class ZimTools < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "cmake" => :build
+  depends_on "mustache" => :build
   depends_on "libzim"
   depends_on "gumbo-parser"
   depends_on "libmagic"
-  depends_on "mustache" => :build
+  depends_on "docopt"
 
   def install
     system "meson", "setup", "build", *std_meson_args
