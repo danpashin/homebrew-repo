@@ -1,17 +1,18 @@
 class Anime4kCpp < Formula
-  desc "A high performance anime upscaler"
+  desc "High performance anime upscaler"
   homepage "https://github.com/TianZerL/Anime4KCPP"
   url "https://github.com/TianZerL/Anime4KCPP/archive/1201ee73d2664c727d4e60f546c13abf757b0aef.tar.gz"
   version "2.6.0-dev"
   sha256 "9369b027dbf533f12a9136724d89edddb69a7a1799e6a20ac6033da4fde33d21"
+  license "MIT"
   head "https://github.com/TianZerL/Anime4KCPP.git", branch: "master"
 
   option "with-gui", "Build with GUI tool"
 
   depends_on "cmake" => :build
   depends_on "llvm" => :build
-  depends_on "qt5" if build.with? "gui"
   depends_on "opencv"
+  depends_on "qt5" if build.with? "gui"
 
   def install
     args = [
@@ -20,7 +21,7 @@ class Anime4kCpp < Formula
     ]
     args << "-DBuild_GUI=ON" if build.with? "gui"
 
-    on_macos do
+    if OS.mac?
       inreplace "GUI/CMakeLists.txt" do |s|
         s.gsub! "TARGETS ${PROJECT_NAME}", "TARGETS ${PROJECT_NAME}\n\tBUNDLE DESTINATION anime4k"
       end

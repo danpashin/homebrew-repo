@@ -1,9 +1,10 @@
 class Elfkickers < Formula
-  desc "A collection of programs that access and manipulate ELF files."
+  desc "Collection of programs that access and manipulate ELF files"
   homepage "https://github.com/BR903/ELFkickers"
   url "https://github.com/BR903/ELFkickers/archive/e7fba942df51e756897224cff5aa853de8fafd90.tar.gz"
   version "3.2"
   sha256 "40a0446ad82670510ca1d13ae73352971e3040ae1591382198a2b7a44794a245"
+  license "GPL-2.0-or-later"
   head "https://github.com/BR903/ELFkickers.git", branch: "master"
 
   on_macos do
@@ -14,7 +15,7 @@ class Elfkickers < Formula
   end
 
   def install
-    on_macos do
+    if OS.mac?
       resource("elf-header").stage { buildpath.install "elf.h" }
 
       inreplace "ebfc/Makefile" do |s|

@@ -4,6 +4,7 @@ class InsertDylib < Formula
   url "https://github.com/Tyilo/insert_dylib/archive/c8beef66a08688c2feeee2c9b6eaf1061c2e67a9.tar.gz"
   version "1.0"
   sha256 "f71cce990812b65ca2273b315eb06cad7b0b6ec837b345079c44e2c36aaf7d07"
+  license :public_domain
   head "https://github.com/Tyilo/insert_dylib.git", branch: "master"
 
   def install
