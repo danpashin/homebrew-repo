@@ -1,9 +1,9 @@
 class Libzim < Formula
   desc "Reference implementation of the ZIM specification"
   homepage "https://github.com/openzim/libzim"
+  version "8.0.0"
   url "https://github.com/openzim/libzim/archive/refs/tags/#{version}.tar.gz"
-  version "7.2.2"
-  sha256 "42f7f19ca50b2185fe91ea91bd676976b7e282ca31c1a70f409d2689788ee59b"
+  sha256 "a408810c9316b56b410f6878a488f7d821c9b7eb3983e0114a4ab1a50394f7d2"
   license "GPL-2.0-only"
   head "https://github.com/openzim/libzim.git", branch: "master"
 
