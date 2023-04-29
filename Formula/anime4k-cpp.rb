@@ -1,9 +1,9 @@
 class Anime4kCpp < Formula
   desc "High performance anime upscaler"
   homepage "https://github.com/TianZerL/Anime4KCPP"
-  url "https://github.com/TianZerL/Anime4KCPP/archive/1201ee73d2664c727d4e60f546c13abf757b0aef.tar.gz"
-  version "2.6.0-dev"
-  sha256 "9369b027dbf533f12a9136724d89edddb69a7a1799e6a20ac6033da4fde33d21"
+  url "https://github.com/TianZerL/Anime4KCPP/archive/23473f01eb0e22d32e369812c686c695522341ec.tar.gz"
+  version "2.6.0-dev_23473f01"
+  sha256 "0c11d969f3395016a7aee6b63e008ef1bb1967fe032cbd6475606913f0216d4e"
   license "MIT"
   head "https://github.com/TianZerL/Anime4KCPP.git", branch: "master"
 

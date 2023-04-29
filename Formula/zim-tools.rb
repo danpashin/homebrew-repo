@@ -1,9 +1,9 @@
 class ZimTools < Formula
   desc "Various ZIM command-line tools"
   homepage "https://github.com/openzim/zim-tools"
-  version "3.1.2"
+  version "3.1.3"
   url "https://github.com/openzim/zim-tools/archive/refs/tags/#{version}.tar.gz"
-  sha256 "93af4a314d02d87facf5c24b9f595937db5ebf1563d22728dc8cc434b23d89c5"
+  sha256 "e15d1a15a9cf1347858a260d60cb52a32e56878ffcf4f953ac927caeb6a3ee67"
   license "GPL-3.0-or-later"
   head "https://github.com/openzim/zim-tools.git", branch: "master"
 

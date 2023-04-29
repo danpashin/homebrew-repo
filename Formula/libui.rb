@@ -1,12 +1,14 @@
 class Libui < Formula
   desc "Simple and portable GUI library in C"
   homepage "https://github.com/libui-ng/libui-ng"
-  url "https://github.com/libui-ng/libui-ng/archive/a850e7ac1e9ca70529f178394d736593c250b5e8.tar.gz"
-  version "0.4.1-a"
-  sha256 "ccf1dd004d35966b219f4e05ae8b1bdeec55d984dbfc2759c0091fc86e213ea8"
+  url "https://github.com/libui-ng/libui-ng/archive/9e57bdd2a36ac44817f9a14c556c5214956ffd73.tar.gz"
+  version "0.4.1-a-9e57bdd2"
+  sha256 "ed7fb7f89225c419f4c63fd27311cd4d3c4012b7f0bcb8bbb3807c6edff51853"
   license "MIT"
   head "https://github.com/libui-ng/libui-ng.git", branch: "master"
 
+  depends_on "cmake" => :build
+  depends_on "cmocka" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
 
