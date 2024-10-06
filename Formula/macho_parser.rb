@@ -7,6 +7,7 @@ class MachoParser < Formula
   head "https://github.com/qyang-nj/llios.git", branch: "main"
 
   depends_on "bazelisk" => :build
+  depends_on :macos
 
   def install
     cd "macho_parser" do

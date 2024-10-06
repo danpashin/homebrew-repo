@@ -7,6 +7,8 @@ class Dylibify < Formula
   license :public_domain
   head "https://github.com/jakeajames/dylibify.git", branch: "master"
 
+  depends_on :macos
+
   def install
     system ENV.cc.to_s, "-framework", "Foundation", "-fobjc-arc", "-o", "dylibify", "main.m"
     bin.install "dylibify"

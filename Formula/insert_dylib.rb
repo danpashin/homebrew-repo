@@ -7,6 +7,8 @@ class InsertDylib < Formula
   license :public_domain
   head "https://github.com/Tyilo/insert_dylib.git", branch: "master"
 
+  depends_on :macos
+
   def install
     Dir.mkdir "build"
     system ENV.cc.to_s, "-o", "build/insert_dylib", "-O3", "insert_dylib/main.c"
