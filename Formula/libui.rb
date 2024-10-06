@@ -1,9 +1,9 @@
 class Libui < Formula
   desc "Simple and portable GUI library in C"
   homepage "https://github.com/libui-ng/libui-ng"
-  url "https://github.com/libui-ng/libui-ng/archive/9e57bdd2a36ac44817f9a14c556c5214956ffd73.tar.gz"
-  version "0.4.1-a-9e57bdd2"
-  sha256 "ed7fb7f89225c419f4c63fd27311cd4d3c4012b7f0bcb8bbb3807c6edff51853"
+  url "https://github.com/libui-ng/libui-ng/archive/49b04c4cf8ae4d3e38e389f446ef75170eb62762.tar.gz"
+  version "0.4.1-a-49b04c4"
+  sha256 "d7abb6e08de95df27e66491f50aed6b671d5da04cd484cfbff2201b69b8ef495"
   license "MIT"
   head "https://github.com/libui-ng/libui-ng.git", branch: "master"
 
@@ -11,15 +11,16 @@ class Libui < Formula
   depends_on "cmocka" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
+  depends_on "pkg-config" => :build
 
   on_linux do
-    depends_on "gtk+3" => :build
-    depends_on "gdk-pixbuf" => :build
-    depends_on "atk" => :build
-    depends_on "glib" => :build
-    depends_on "pango" => :build
-    depends_on "harfbuzz" => :build
-    depends_on "cairo" => :build
+    depends_on "gtk+3"
+    depends_on "gdk-pixbuf"
+    depends_on "at-spi2-core"
+    depends_on "glib"
+    depends_on "pango"
+    depends_on "harfbuzz"
+    depends_on "cairo"
   end
 
   def install
